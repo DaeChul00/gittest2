@@ -16,5 +16,9 @@ public class CalculatorController {
     public int add(@RequestParam int a, @RequestParam int b) {
         return calculatorService.add(a, b);
     }
-
+    
+    @GetMapping("/power")
+    public int power(@RequestParam int a, @RequestParam int b) {
+        return calculatorService.power(a, b);
+    }
 }
