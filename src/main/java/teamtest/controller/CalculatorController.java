@@ -16,5 +16,10 @@ public class CalculatorController {
     public int add(@RequestParam int a, @RequestParam int b) {
         return calculatorService.add(a, b);
     }
+    
+    @GetMapping("/divide")
+    public int divide(@RequestParam int a, @RequestParam int b) {
+        return calculatorService.divide(a, b);
+    }
 
 }
