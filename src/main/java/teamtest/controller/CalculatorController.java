@@ -16,5 +16,12 @@ public class CalculatorController {
     public int add(@RequestParam int a, @RequestParam int b) {
         return calculatorService.add(a, b);
     }
+    
+    
+    
+    @GetMapping("/multiply")
+    public int multiply(@RequestParam int a, @RequestParam int b) {
+        return calculatorService.multiply(a, b);
+    }
 
 }
