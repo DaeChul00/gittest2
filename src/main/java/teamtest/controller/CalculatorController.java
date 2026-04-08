@@ -16,5 +16,10 @@ public class CalculatorController {
     public int add(@RequestParam int a, @RequestParam int b) {
         return calculatorService.add(a, b);
     }
+    
+    @GetMapping("/mod")
+    public int mod(@RequestParam int a, @RequestParam int b) {
+        return calculatorService.modulo(a, b);
+    }
 
 }
